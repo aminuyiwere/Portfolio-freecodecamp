@@ -15,9 +15,6 @@ html,body{
     font-weight: 400;
     line-height: 1.4;
 }
-html{
-
-}
 #navbar{
     position: fixed;
     background-color: rgb(222, 72, 97);
@@ -76,47 +73,107 @@ html{
 .projects-section{
     position: relative;
     background-color: var(--main-blue);
+    padding-bottom: 10em;
     
 }
 .projects-section-header{
     text-align: center;
     color: var(--main-white);
-    border-bottom: 0.1rem solid var(--main-white);
     padding:3em 0 ;
     font-size: 2em;
 }
 .projects-grid{
-    
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
-    /* gap: 1rem; */
+
 }
 .project-image{
-    height: 400px;
-    width: 400px;
+    min-height: 350px;
+    max-width:400px;
     object-fit: fill;
+
 }
 .project-title{
     text-align: center;
     background-color: var(--main-gray);
-    width: 400px;
+    width: 100%;
     height: 2em;
     margin:-.35em 0 .4em 0;
     z-index: -10;
-}
-.contact-section{
 
 }
+.project{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--main-white);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
 
-
-/* desktop */
-@media (min-width:900px) {
-    .projects-grid{
+}
+.code{
     
-        display: grid;
+    color: var(--main-gray);
+    
+}
+.btn{
+
+}
+.btn-show-all{
+   
+   border-radius: 15px;
+   width: 8em;
+   height: 5em;
+   margin-top: 5em;
+   text-decoration: none;
+   background-color: var(--main-gray); 
+   color: var(--main-white);
+}
+.btn-show-all:hover{
+    background-color: var(--main-red);
+}
+
+.contact-section{
+ min-height: 30em;
+ background-color: var(--main-gray);
+ text-align: center;
+ padding-top: 5em;
+}
+
+.contact-section-header{
+    color: var(--main-white);
+}
+.contact-section-header h2{
+    font-size: 3em;
+}
+.contact-section-header p{
+    font-style: italic;
+    padding-top: .5em;
+}
+.contact-links{
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+.contact-links a{
+   text-decoration: none;
+   color: var(--main-white);
+   font-size: 1.4em;
+}
+.contact-details:hover {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+/* desktop */
+
+
+@media (min-width:878px) {
+    .projects-grid{
+        display:grid;
         grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        /* gap: 1rem; */
+
     }
+    
 }
