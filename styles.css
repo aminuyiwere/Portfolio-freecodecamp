@@ -95,7 +95,7 @@ html,body{
 
 }
 .project-image{
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 6.5rem);
     width: 100%;
     object-fit: cover;
 
@@ -129,14 +129,12 @@ a{
     color: var(--main-gray);
     
 }
-.btn{
- 
-}
+
 .btn-show-all{
-   border-radius: 15px;
+   border-radius: 5px;
    width: 8em;
    height: 3em;
-   margin-top: 10em;
+   margin-top: 6em;
    text-decoration: none;
    background-color: var(--main-gray); 
    color: var(--main-white);
